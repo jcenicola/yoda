@@ -15,7 +15,7 @@ AWS_REGION = urllib.request.urlopen('http://169.254.169.254/latest/meta-data/pla
 
 def fetch_meme_string():
     headers = {
-        'content-type': 'application/x-www-form-urlencoded; charset=UTF-8',
+        'content-type': 'application/json; charset=UTF-8',
         'cookie': 'iflipsess=m93lmsb9qd54cg9fa9ceprsrne; __utma=71379083.1893744996.1639096789.1639096789.1639096789.1; __utmb=71379083.3.10.1639096789; __utmc=71379083;__utmz=71379083.1639096789.1.1.utmcsr=google|utmccn=(organic)|utmcmd=organic|utmctr=(not%20provided); __utmt=1,
     }
 
@@ -26,7 +26,7 @@ def fetch_meme_string():
         headers=headers
     )
     result = json.loads(response.text)
-    return result['texts']
+    return result['text']
 
 
 @app.route("/")
