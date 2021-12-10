@@ -16,10 +16,10 @@ AWS_REGION = urllib.request.urlopen('http://169.254.169.254/latest/meta-data/pla
 def fetch_meme_string():
     headers = {
         'content-type': 'application/x-www-form-urlencoded; charset=UTF-8',
-        'cookie': 'iflipsess=2vnh2n6rd3up4oqog91htsv773; __utma=71379083.1107561543.1638889996.1638889996.1638889996.1; __utmb=71379083.36.9.1638892293795; __utmc=71379083; __utmz=71379083.1638889996.1.1.utmcsr=google|utmccn=(organic)|utmcmd=organic|utmctr=(not%20provided)',
+        'cookie': '__utmc=71379083; iflipsess=2vnh2n6rd3up4oqog91htsv773; __utma=71379083.1107561543.1638889996.1638889996.1639093881.2; __utmz=71379083.1639093881.2.2.utmcsr=google|utmccn=(organic)|utmcmd=organic|utmctr=(not provided); __utmt=1;__utmb=71379083.2.10.1639093881',
     }
 
-    post_request = 'use_openai=0&meme_id=14371066&init_text=&__tok=IQbjUhEGUrbSq2e5rkwPVn8VdeQUTOSb5fzGuY6O30E=&__cookie_enabled=1'
+    post_request = 'use_openai=0&meme_id=181913649&init_text=&__tok=3SkYPMzcI2dVrpj/Id1gsxmciU+ZjHw3ZL4BJ0aL5vQ=&__cookie_enabled=1'
     response = requests.post(
         "https://imgflip.com/ajax_ai_meme",
         data=post_request,
