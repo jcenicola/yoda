@@ -16,7 +16,7 @@ AWS_REGION = urllib.request.urlopen('http://169.254.169.254/latest/meta-data/pla
 def fetch_meme_string():
     headers = {
         'content-type': 'application/x-www-form-urlencoded; charset=UTF-8',
-        'cookie': 'iflipsess=6spj49rvv6b86qdtdddu7jn476; __utma=71379083.1268303026.1639146226.1639407255.1639410627.4;',
+        'cookie': 'iflipsess=6spj49rvv6b86qdtdddu7jn476; __utma=71379083.1268303026.1639146226.1639407255.1639410627.4; __utmb=71379083.1.10.1639410627; __utmc=71379083; __utmz=71379083.1639146226.1.1.utmcsr=google|utmccn=(organic)|utmcmd=organic|utmctr=(not%20provided); __utmt=1',
     }
 
     post_request = 'use_openai=0&meme_id=14371066&init_text=&__tok=NhUyH5dwAwQpmsuiwrr+7qH4aPxkysLIxykGS4TxAEY=&__cookie_enabled=1'
