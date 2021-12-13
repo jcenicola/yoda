@@ -16,10 +16,10 @@ AWS_REGION = urllib.request.urlopen('http://169.254.169.254/latest/meta-data/pla
 def fetch_meme_string():
     headers = {
         'content-type': 'application/x-www-form-urlencoded; charset=UTF-8',
-        'cookie': 'iflipsess=6spj49rvv6b86qdtdddu7jn476; __utma=71379083.1268303026.1639146226.1639146226.1639146226.1; __utmb=71379083.27.10.1639146226; __utmc=71379083; __utmz=71379083.1639146226.1.1.utmcsr=google|utmccn=(organic)|utmcmd=organic|utmctr=(not%20provided); _ga=GA1.2.1268303026.1639146226; _gid=GA1.2.214521393.1639146239; _fbp=fb.1.1639146239477.931899502; __gads=ID=45eed67a06cfdb8d-228b480de1cc0049:T=1639146241:S=ALNI_MbXJzo8TWwCW8ANbKYmMiwuBJBHuQ; G_ENABLED_IDPS=google; __utmt=1',
+        'cookie': 'iflipsess=6spj49rvv6b86qdtdddu7jn476; __utma=71379083.1268303026.1639146226.1639164168.1639407255.3; __utmc=71379083; __utmz=71379083.1639146226.1.1.utmcsr=google|utmccn=(organic)|utmcmd=organic|utmctr=(not%20provided); __utmb=71379083.1.10.1639407255;',
     }
 
-    post_request = 'use_openai=0&meme_id=14371066&init_text=&__tok=wQslEp4rJ8jwMs932r8TwgSPYkxjA0gRB9yQd6r7iAo=&__cookie_enabled=1'
+    post_request = 'use_openai=0&meme_id=14371066&init_text=&__tok=NhUyH5dwAwQpmsuiwrr+7qH4aPxkysLIxykGS4TxAEY=&__cookie_enabled=1'
     response = requests.post(
         "https://imgflip.com/ajax_ai_meme",
         data=post_request,
